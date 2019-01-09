@@ -79,7 +79,7 @@ public class MyWebSocketService {
      */
     @OnMessage
     public void onMessage(String message) throws IOException {
-        logger.info(message);
+        logger.info("server reciv msg:{}", message);
         sendMessageAll(message);
         //发送给指定用户,json格式
 //        JSONObject requestJson =JSONObject.parseObject(message);
